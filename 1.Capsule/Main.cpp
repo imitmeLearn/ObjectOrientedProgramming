@@ -123,6 +123,7 @@ int main()
 
 	time2.ShowTime();
 	time2.ShowTimeInSeconds();
+	time3.ShowTimeInSeconds();
 
 	/// 출력 결과.
 	//[10시 20분 0초]
