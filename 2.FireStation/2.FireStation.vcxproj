@@ -145,6 +145,8 @@
   <ItemGroup>
     <ClInclude Include="Firefighter.h" />
     <ClInclude Include="Firetruck.h" />
+    <ClInclude Include="Hose.h" />
+    <ClInclude Include="Ladder.h" />
     <ClInclude Include="Point.h" />
   </ItemGroup>
   <ItemGroup>
