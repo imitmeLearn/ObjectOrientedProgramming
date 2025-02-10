@@ -3,6 +3,9 @@
 #include "Point.h"
 #include "Ladder.h"
 #include "Hose.h"
+
+//#include "Firefighter.h"//전방선언 순환참조
+
 class Firetruck
 {
 public:
@@ -38,17 +41,19 @@ public:
 	}
 
 	class Firefighter* GetDriver() const
+		//Firefighter* GetDriver() const
 	{
 		return driver;
 	}
 
 	void SetDriver(class Firefighter* driver)
+		//void SetDriver(Firefighter* driver)
 	{
 		this -> driver = driver;
 	}
 
 private:
-	class	Firefighter* driver = nullptr;
+	class	Firefighter* driver = nullptr; //전방선언 순환참조	//Firefighter* driver = nullptr; //전방선언 순환참조
 	Ladder* ladder = nullptr;
 	Hose* hose = nullptr;
 };
