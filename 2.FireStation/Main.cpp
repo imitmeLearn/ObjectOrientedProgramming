@@ -7,11 +7,11 @@ int main()
 	Firefighter* ronnie = new Firefighter("로니");
 	Firefighter* james = new Firefighter("제임스");
 
-	FireChief* harry = new FireChief("해리");
+	FireChief* harry = new FireChief("해리",ronnie);
 	truckOne->SetDriver(harry);
 	harry->Drive(truckOne,Point(200,300));
 
-	harry->TellFirefighterToExtinguishFire(ronnie);
+	harry->ExtinguishFire();	//harry->TellFirefighterToExtinguishFire(ronnie);	//해리가 불 안끄고, 로니가 끔.위임받았기에
 
 	truckOne->SetDriver(ronnie);
 

@@ -9,10 +9,10 @@ public:
 	Firefighter(const std::string& name)
 		: name(name)
 	{}
-	//~Firefighter()=default;
+	virtual	~Firefighter()=default;
 
 	//불끄기
-	void ExtinguishFire()
+	virtual	void ExtinguishFire()
 	{
 		std::cout<<name<<"소방관이 불을 끄고 있어! "<<"\n";
 	}
