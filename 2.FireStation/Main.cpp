@@ -1,10 +1,17 @@
 ﻿#include "Firefighter.h"
+#include "FireChief.h"
 
 int main()
 {
 	Firetruck* truckOne = new Firetruck();
 	Firefighter* ronnie = new Firefighter("로니");
 	Firefighter* james = new Firefighter("제임스");
+
+	FireChief* harry = new FireChief("해리");
+	truckOne->SetDriver(harry);
+	harry->Drive(truckOne,Point(200,300));
+
+	harry->TellFirefighterToExtinguishFire(ronnie);
 
 	truckOne->SetDriver(ronnie);
 

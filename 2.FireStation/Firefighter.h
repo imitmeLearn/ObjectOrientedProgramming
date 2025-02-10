@@ -7,9 +7,9 @@ class Firefighter
 {
 public:
 	Firefighter(const std::string& name)
-		:name (name)
+		: name(name)
 	{}
-	~Firefighter()=default;
+	//~Firefighter()=default;
 
 	//불끄기
 	void ExtinguishFire()
