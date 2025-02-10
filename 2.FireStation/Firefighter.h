@@ -23,6 +23,8 @@ public:
 		//운전자 확인
 		if(truckToDrive->GetDriver() != this)
 		{
+			std::cout<<name<<" 운전자 다름 "<<"\n";
+
 			return;
 		}
 
