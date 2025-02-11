@@ -61,7 +61,7 @@ private:
 //#include "Ladder.h"
 //#include "Hose.h"
 //
-//#include "Firefighter.h"//전방선언 순환참조
+//#include "Firefighter.h"//전방선언 순환참조 //https://hobbylife.tistory.com/entry/%ED%97%A4%EB%8D%94%ED%8C%8C%EC%9D%BC-%EC%88%9C%ED%99%98%EC%B0%B8%EC%A1%B0-%EC%97%90%EB%9F%AC%EB%A9%94%EC%84%B8%EC%A7%80%EC%99%80-%ED%95%B4%EA%B2%B0%EB%B0%A9%EB%B2%95Include-Guard%EC%99%80-%EC%A0%84%EB%B0%A9-%EC%84%A0%EC%96%B8
 //
 //class Firetruck
 //{
@@ -110,6 +110,7 @@ private:
 //	}
 //
 //private:
+//	Firefighter driver2;// = nullptr; //전방선언 순환참조
 //	Firefighter* driver = nullptr; //전방선언 순환참조
 //	//class	Firefighter* driver = nullptr; //전방선언 순환참조	//Firefighter* driver = nullptr; //전방선언 순환참조
 //	Ladder* ladder = nullptr;
