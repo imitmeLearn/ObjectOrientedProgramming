@@ -16,7 +16,7 @@ protected:
 	{
 		if(hoseTrainedOnFire)
 		{
-			std::cout<< "불 꺼지고 있습니다."<<"\n";	//이게 나와야 해
+			Firefighter::TurnOnHose();
 		} else
 		{
 			std::cout<< "물 엉뚱"<<"\n";
@@ -28,7 +28,7 @@ protected:
 	{
 		hoseTrainedOnFire =true;
 
-		std::cout<<"호스 불 겨냥"<<"\n";
+		Firefighter::TrainHoseOnFire();
 	}
 private:
 	bool hoseTrainedOnFire =false;
