@@ -15,6 +15,8 @@ public:
 	virtual	void ExtinguishFire()
 	{
 		std::cout<<name<<"소방관이 불을 끄고 있어! "<<"\n";
+		TrainHoseOnFire();
+		TurnOnHose();
 	}
 
 	//운전
@@ -39,6 +41,19 @@ public:
 	void SetName(const std::string& name)
 	{
 		this->name =name;
+	}
+
+private:
+	//호스 켜기(물)
+	void TurnOnHose()
+	{
+		std::cout<<name<<"소방관! 불이 꺼지고 있습니다. "<<"\n";
+	}
+
+	//호스 조준.
+	void TrainHoseOnFire()
+	{
+		std::cout<<name<<"소방관! 호스를 불이 발생한 곳에 겨냥하고 있습니다."<<"\n";
 	}
 
 private:
